@@ -1,0 +1,571 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 50px 0 0 0;
+    overflow-x: hidden; 
+  }
+nav a{
+    text-decoration: none;
+    color: #323232;;
+}
+body{
+    overflow-x: hidden;
+}
+nav{
+    transition: 500ms;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    position:fixed;
+    top: 0;
+    width:100%;
+}
+nav img{
+    margin-top: 10px;
+    margin-left: 20px;
+    height: 50px;
+}
+nav .navi{
+    display: flex;
+}
+nav p{
+    font-size: 1em;
+    margin: 20px 30px 30px 0px;
+}
+nav p:hover{
+    text-decoration: underline;
+}
+#nav{
+    background-color: #fdfdfd;
+}
+
+.title{
+    height: 117px;
+    width: 302px;
+    font-size: 2em;
+    background-image: url('containers/title.SVG');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section{
+    width: 100%;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.transition{
+    width: 100%;
+    height: 177px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+    margin-bottom: -2px;
+    margin-top: -1px;
+    
+}
+
+
+.landing{
+    background-image: url('containers/landing-background.svg');
+    background-color: #fdfdfd;
+    background-repeat: no-repeat;
+    background-position: right;
+    height:70vh;
+    width: 100%;
+}
+
+.landing-text{
+    position: absolute;
+    top: 220px;
+    width: 100%;
+    color:#E46F6E;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.landing-text .name{
+    font-size: 7em;
+    font-family: "Josefin sans";
+    font-weight: 600;
+}
+.landing-text .short-desc{
+    color: #323232;
+    font-size: 1.4em;
+}
+
+.transition1{
+    margin-top: -100px;
+    margin-bottom: -2px;
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom left;
+    background-image: url('containers/landing-bottom.svg');
+    background-color: #fdfdfd;
+}
+
+.about{
+    color: #02000E;
+    background-color: #A33B5A;
+}
+
+.about .kefas{
+    width:300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-top: 60px; 
+}
+
+
+.about-container{
+    width: 100%;
+    height: 390px;
+    display: flex;
+    justify-content: center;
+}
+
+.about .info{
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    background-image: url('containers/introduction.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: 50px;
+    height: 362px;
+    width: 784px;
+    margin-bottom: 100px;
+}
+.about .info p{
+    width: 660px;
+    font-size: 1.4em;
+}
+.about  .info span{
+    font-size: 2.2em;
+}
+.about .two-circles{
+    margin-right: 20px;
+    margin-top: -220px;
+}
+.about .hello{
+    width: 100%;
+    padding-right: 150px;
+    margin-top: 150px;
+    margin-bottom: 180px;
+    text-align: right;
+    color: #fdfdfd;
+    font-family: 'Josefin Sans';
+    font-style: italic;
+    font-size: 4.5em;
+    font-weight: 300;
+}
+.rocket2{
+    width: 450px;
+    margin-top: -170px;
+    margin-left: 800px;
+}
+
+.transition2{
+    margin-top: -150px;
+    background-image: url('containers/transition2.svg');
+}
+
+.tools{
+    background-color: #813358;
+    color: #02000E;
+}
+.tools .toolset{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.tools .toolset .tool-list{
+    background-image: url('containers/tools.svg');
+    background-repeat: no-repeat;
+    width: 266px;
+    height: 370px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.tools .toolset .tool-list p{
+    font-size: 1.3em;
+}
+
+.tools .toolset .second-tools{
+    margin-top: 60px;
+}
+
+.tools .toolset .first-tools, .tools .toolset .third-tools {
+    margin-top: 120px;
+}
+.tools > p{
+    font-family: 'Josefin sans';
+    color: #fdfdfd;
+    font-style: italic;
+    font-size: 1.5em;
+    font-weight: 300;
+    text-align: right;
+    line-height: 43px;
+    width: 550px;
+    height: 86px;
+    margin-top: 100px;
+    margin-right: -50%;
+}
+
+.transition3{
+    background-color: #813358;
+    background-image: url('containers/transition3.svg');
+}
+
+.experiences{
+    background-color: #5A2B4A;
+}
+
+.experience-list{
+    width: 65%;
+    color: #fdfdfd;
+}
+.experience{
+    margin-top: 80px;
+    display: flex;
+    align-content: center;
+}
+.experience p{
+    margin-left: 80px;
+    font-size: 1.7em;
+}
+.experience-desc{
+    font-size: 1.1em;
+    font-family: 'Josefin sans';
+    font-style: italic;
+    font-weight: 100;
+    margin-left: 150px;
+}
+
+.experiences .git{
+    margin: 120px 0 50px 0;
+}
+
+.experiences .git img{
+    margin: 0 40px 0 40px;
+}
+
+.transition4{
+    background-color: #5A2B4A;
+    background-image: url('containers/transition4.svg');
+}
+
+.contact{
+    background-color: #391F3E;
+}
+.title2{
+    color: #fdfdfd;
+    font-size: 5em;
+    font-weight: 300;
+    font-family: 'Josefin sans';
+    font-style: italic;
+}
+.line{
+    margin-top: 50px;
+    margin-bottom: 120px;
+    width: 709px;
+    height: 5px;
+    background: #fdfdfd;
+}
+.line-sosmed{
+    display:flex;
+    color:  #ffffff;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.line-sosmed p{
+    margin-left: 10px;
+    font-size: 2em;
+}
+.sosmed .linkedin{
+    margin-top: -20px;
+}
+
+.email p{
+    margin-top: 40px;
+    font-size: 2em;
+    color:white;
+    margin-bottom: 40px;
+}
+
+.phone{
+    display: flex;
+    width: 500px;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.phone img{
+    width: 50px;
+    margin-right: 10px;
+}
+.phone p{
+    margin-top: 5px;
+    font-size: 1.5em;
+    color:white;
+}
+
+.transition5{
+    width: 100%;
+    height: 681px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+    background-color: #391F3E;
+    background-image: url('containers/transition5.svg');
+    padding-top: 150px;
+    color: #fdfdfd;
+    font-family: 'Josefin sans';
+    font-weight: 300;
+    margin-top: -1px;
+    margin-bottom: -1px;
+
+}
+.transition5 p{
+    font-size: 2em;
+}
+.transition5  p:nth-child(1){
+    margin-left: 150px;
+    margin-bottom: 90px;
+}
+.transition5  p:nth-child(2){
+    margin-left: 300px;
+}
+
+.gallery{
+    background-color: #1E1736;
+}
+.gallery .art{
+    width: 50%;
+    margin: 60px 0 60px 0;
+    width: 80%;
+}
+.gallery .masmas{
+    margin: 60px 0 30px 0;
+}
+.line-end{
+    margin-bottom: 40px;
+}
+.end{
+    font-size: 3.5em;
+    font-weight: 100;
+    margin-bottom: 100px;
+
+}
+.more{
+    color: #ffffff;
+}
+@media only screen and (max-width: 1024px){
+            
+    .landing-text{
+        top: 260px;
+    }
+
+    .about .info{
+        padding-top: 35px;
+        background-color: #fdfdfd;
+        background-image: none;
+        border-radius: 30px;
+        width: 55%;
+    }
+    .about-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .about .info p{
+        width: 80%;
+        font-size: 1.2em;
+    }
+    .about .two-circles{
+        width: 70px;
+    }
+    .about .info span{
+        font-size: 2em;
+    }
+    .tools > p{
+        margin-right: -30%;
+    }
+    .about .kefas{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-top: 60px; 
+    }
+    .title{
+        height: 100px;
+        width: 260px;
+        font-size: 1.5em;
+        background-color: #fdfdfd;
+        background-image: none;
+        border-radius: 25px;
+    }
+
+    .tools .toolset .tool-list{
+        background-image: none;
+        background-color: #fdfdfd;
+        border-radius: 35px;
+        width: 200px;
+        height: 370px;
+    }
+    .tools > p{
+        width: 70%;
+        margin-top: 100px;
+        margin-right: -15%;
+    }
+    .experience p{
+        margin-top: 20px;
+        margin-left: 50px;
+        font-size: 1em;
+    }
+    .experience-desc{
+        font-size: 0.9em;
+    }
+    .transition5 p{
+        font-size: 1em;
+    }
+    .transition5  p:nth-child(1){
+        margin-left: 50px;
+        margin-bottom: 50px;
+    }
+    .transition5  p:nth-child(2){
+        margin-left: 200px;
+    }
+    .title2{
+        font-size: 4em;
+    }
+    .line{
+        margin-top: 20px;
+        width: 75%;
+    }
+    .end{
+        font-size: 3em;
+    }
+}
+@media only screen and (max-width: 628px) {
+    nav p{
+        font-size: 0.6em;
+        margin: 30px 15px 15px 0px;
+    }
+    nav img{
+        margin-top: 20px;
+        margin-left: 20px;
+        height: 30px;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    
+    .landing-text{
+        top: 170px;
+        color:rgb(211, 88, 86);
+    }
+    
+    
+    .landing-text .name{
+        font-size: 6em;
+        margin-bottom: 50px;
+    }
+    .landing-text .short-desc{
+        font-size: 1.2em;
+    }
+    .about .info{
+        width: 80%;
+        height: auto;
+    }
+    .about-container{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about .info p{
+        width: 80%;
+        font-size: 1em;
+    }
+    .about .two-circles{
+        display: none;
+    }
+    .about .hello{
+        margin:0 -40% 50px 0;
+        font-size: 2em;
+    }
+    .toolset{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .tools .toolset .first-tools, .tools .toolset .third-tools {
+        margin-top: 70px;
+    }
+    
+    .tools .toolset .tool-list{
+        width: 60%;
+        height: 370px;
+    }
+
+    .title{
+        height: 85px;
+        width: 220px;
+        font-size: 1.2em;
+    }
+
+    .experience p{
+        margin-top: 20px;
+        margin-left: 20px;
+        font-size: 1em;
+    }
+    .experience-desc{
+        margin-left: 60px;
+        font-size: 0.9em;
+    }
+    .git img{
+        width: 80px;
+    }
+    .title2{
+        font-size: 2.3em;
+        text-align: center;
+    }
+    .contact .linkedin{
+        width: 200px;
+    }
+    .contact p{
+        font-size: 1.4em;
+    }
+    .transition5{
+        height: 500px;
+    }
+    .transition5  p:nth-child(2){
+        margin-left: 100px;
+    }
+    .line{
+        margin-bottom: 40px;
+    }
+    .masmas{
+        width: 300px;
+    }
+    .end{
+        font-size: 2em;
+    }
+}
+
